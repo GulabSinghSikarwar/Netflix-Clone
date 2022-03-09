@@ -1,0 +1,40 @@
+.row{
+    display: flex;
+    overflow-x: scroll;
+    padding: 20px;
+    overflow-y: hidden;
+}
+.movie{
+   
+    object-fit: contain;
+    max-height: 100px;
+    width: 100%;
+    margin-right: 10px;
+    transition: transform  450ms;
+   
+}
+.row::-webkit-scrollbar{
+    display: none;
+}
+.movie:hover{
+    transform: scale(1.08);
+    opacity: 1;
+}
+
+.series{
+    margin-top: 5px;
+    color: white;
+}
+.largeMovie{
+    object-fit: contain;
+    max-height: 250px;
+    width: 100%;
+    margin-right: 10px;
+    transition: transform  450ms;
+}
+
+.largeMovie:hover{
+    transform: scale(1.08);
+    opacity: 1;
+}
+

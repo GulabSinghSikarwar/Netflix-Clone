@@ -1,0 +1,46 @@
+.nav{
+    position: fixed;
+    /* background-color: black; */
+    width: 100%;
+    top: 0;
+    height: 30px;
+    padding: 20px;
+    /* Animation  */
+    transition-property: all;
+    transition-timing-function: ease-in;
+    transition-duration: 0.5s;
+
+}
+.nav_black{
+    position: fixed;
+    background-color: black;
+    width: 100%;
+    top: 0;
+    height: 30px;
+    padding: 20px;
+    /* Animation  */
+    transition-property: all;
+    transition-timing-function: ease-in;
+    transition-duration: 0.5s;
+}
+.nav_contents{
+    display: flex;
+    justify-content: space-between;
+
+}
+.nav_logo{
+position: fixed;
+left: 0px;
+top: 20px;
+
+width: 80px;
+cursor: pointer; 
+padding-left: 20px;
+}
+.nav_avtar{
+right: 20px;  
+position: fixed;  
+
+height: 20px;
+cursor: pointer;
+}
