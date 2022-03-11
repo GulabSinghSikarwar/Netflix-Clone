@@ -1,8 +1,8 @@
 import React from 'react'
-import Banner from '../Banner/Banner'
-import Nav from '../Nav/Nav'
-import Row from '../Rows/Row'
-import request from '../TMDB/Request'
+import Banner from '../../Banner/Banner'
+import Nav from '../../Nav/Nav'
+import Row from '../../Rows/Row'
+import request from '../../TMDB/Request'
 import styled from './HomeSceen.module.css'
 function HomeScreen() {
   return (

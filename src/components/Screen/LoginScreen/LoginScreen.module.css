@@ -1,0 +1,86 @@
+.loginscreen{
+    height: 100%;
+    position: relative;
+    background-image: url("../../resources/images/login_bg_img.jpg");
+}
+.loginscreen_logo{
+    position: fixed;
+    width: 150px;
+    object-fit: contain;
+    padding-left: 20px;
+    top: 20px;
+}
+.loginscreen_btn{
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    border: none;
+    background-color:#e50914 ;
+    color: white;
+    padding: 10px 20px;
+    font-size:18px ;
+    font-weight: 300;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.loginscreen_gradient{
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient(
+        to top,
+        rgba(0,0,0,0.8) 0% ,
+        rgba(0,0,0,0) 60% ,
+        rgba(0,0,0,0.8) 100% 
+        
+    );  
+
+}
+.loginscreen_body{
+    
+    color: white;
+    z-index: 1;
+    padding: 20px;
+    position: absolute;
+    top: 30%;
+    /* margin-left: auto;
+    margin-right: auto ; */
+    text-align: center;
+    left: 0;
+    right: 0;
+    /* align-items: center; */
+    
+}
+.loginscreen_body > h1{
+    font-size: 3.125rem;
+    margin-bottom: 20px;
+
+}
+.loginscreen_body >h2{
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.loginscreen_body >h3{
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+.loginscreen_body > form > input{
+    padding: 10px;
+    outline-width:0px ;
+    height: 38px;
+    width: 30%;
+    border: none;
+    max-width: 600px ;
+    color: black;
+
+}
+.loginscreen_get_started{
+    font-size: 1rem;
+    padding: 20px 20px;
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
