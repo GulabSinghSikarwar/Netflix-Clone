@@ -1,0 +1,31 @@
+.Plan{
+    display: flex;
+    max-width: 600px;
+    width: 100%;
+    padding: 20px 40px;
+    
+    position: relative;
+    justify-content: space-between;
+}
+.Plan_details > h3{
+    font-size: 12px;
+    font-weight: 600;
+}
+.Plan_details > h4{
+    font-size: 12px;
+    font-weight: 600;
+}
+.Plan_suscribe_btn{
+   
+    background-color: #e50914;
+    color: white;
+    border: none;
+    padding: 8px 15px ;
+    border-radius: 3px;
+    outline: none;
+    font-weight: 600;
+    margin-right: 50px;
+}
+.Plan_suscribe{
+    max-width: 200px;
+}

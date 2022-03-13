@@ -17,7 +17,8 @@ function SignupScreen() {
          const status = onAuthStateChanged(auth , (user)=>{
             if(user){ console.log(user);}
         })
-        return status
+        return status;
+         
 
     }, [])
 
