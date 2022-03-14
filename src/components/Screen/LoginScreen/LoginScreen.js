@@ -5,6 +5,9 @@ import SignupScreen from '../SignUpScreen/SignupScreen'
 function LoginScreen() {
 
     const [signIn,setSignIn]=useState(false)
+    const showStatus=()=>{
+        setSignIn(false)
+    }
     return (
         <div className={styled.loginscreen}>
             <div className={styled.loginscreen_background}>
@@ -39,7 +42,7 @@ function LoginScreen() {
 
                 </>
                    ):
-                  ( <SignupScreen/> )
+                  ( <SignupScreen showStatus={showStatus} /> )
                   
                }
 

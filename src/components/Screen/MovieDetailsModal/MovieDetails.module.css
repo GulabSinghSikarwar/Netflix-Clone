@@ -1,0 +1,94 @@
+.MovieModal_Backdrop{
+    background:rgba(0, 0, 0, 0.7);
+    height: 100vh;
+    z-index: 10;
+    top: 0;
+    width: 100%;
+    position: fixed;
+
+}
+
+.MovieModal_Overlay{
+    position: fixed;
+    /* max-height: 70vh; */
+    height: fit-content;
+    
+
+    top: 10%;
+    background-color: black;
+    color: white;
+    /* text-align: center; */
+    max-width: 600px;
+    left: 0%;
+    right: 0%;
+    z-index: 100;
+    bottom: 50px;
+    padding: 30px;
+    border-radius: 10px;
+    margin-left:auto ;
+    margin-right:auto ;
+    /* border: #e50914 1px solid ; */
+    overflow-y: scroll;
+}
+.MovieModal_Overlay::-webkit-scrollbar{
+    display: none;
+}
+.MovieModal_Overlay_card_header{
+    margin-bottom: 5px;
+}
+
+.MovieModal_Overlay_card_header >img{
+    object-fit: contain;
+    width: 100%;
+
+
+    
+
+}
+.MovieModal_Overlay_card_body >p{
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+.rating{
+    /* align-items: center; */
+    display: flex;
+    
+    align-items: center;
+}
+
+.rating >img{
+    height: 20px;
+    margin-right: 15px;
+}
+
+.MovieModal_Overlay_card_body >h2{
+    font-size: 26px;
+    font-weight: 700;
+}
+.MovieModal_Overlay_card_body >p{
+    font-size: 14px;
+    font-weight: 400;
+}
+.MovieModal_Overlay_card_footer{
+    margin-bottom: auto;
+    width: 100%;
+   text-align: center;
+    
+
+   
+
+}
+.MovieModal_Overlay_card_footer > button{
+    background-color: #e50914;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    font-weight: 600;
+    font-size: 16px;
+    /* margin: 10px 0px; */
+    outline: none;
+    border-radius: 3px;
+    
+
+
+}

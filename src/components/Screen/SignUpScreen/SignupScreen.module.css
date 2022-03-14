@@ -4,7 +4,7 @@
     background: rgba(0, 0, 0, 0.84);
     border-radius: 5px;
     margin-left:auto ;
-    margin-right: auto;
+    margin-right: auto;margin-bottom: 50px;
 
 }
 .signupScreen > form{
@@ -21,15 +21,35 @@
     border-radius: 5px;
 
 }
-.signupScreen >form >  button{
+.SignupScreen_action{
+    display: flex;
+    padding: 0px 20px ;
+    justify-content: space-between;
+
+ 
+
+} .SignupScreen_action_cancel{
     background-color:#e50914 ;
     color: white;
     font-size: 1rem;
-    padding: 16px 20px;
+    padding: 12px 25px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    width: 100%;
+    /* margin-right: 10px; */
 
+}
+.SignupScreen_action_signIn{
+    background-color:#e50914 ;
+    color: white;
+    font-size: 1rem;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-right: 10px;
 }
 .signupScreen >form > h1{
     text-align: left;
@@ -51,4 +71,9 @@
 }
 .signupScreen_signup_link:hover{
     text-decoration: underline;
+}
+.loadingGif >img{
+    height: 50px;
+    margin-top: 25px;
+    
 }

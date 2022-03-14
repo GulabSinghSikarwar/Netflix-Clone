@@ -3,16 +3,24 @@ import Banner from '../../Banner/Banner'
 import Nav from '../../Nav/Nav'
 import Row from '../../Rows/Row'
 import request from '../../TMDB/Request'
+import MovieModal from '../MovieDetailsModal/MovieModal'
 import styled from './HomeSceen.module.css'
+import { useSelector } from 'react-redux'
 function HomeScreen() {
+  
+  const showMovie=useSelector((state)=>{
+    return state.showDetailsSlice.showDetails;
+
+  })
   return (
     <div className={styled.homeScreen}>
-      
       {/* Nav  */}
 
       {/* Banner  */}
       <Banner/>
+    
       <Nav />
+        {(showMovie)?<MovieModal/>:""}
 
       <Row
       title={"Netflix Original"}

@@ -1,6 +1,7 @@
 import React from 'react'
 import NetFlixLogo from '../resources/images/logo.png'
 import User from '../resources/images/user.png'
+
 import styled from './Nav.module.css'
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'

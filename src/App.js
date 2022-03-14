@@ -13,8 +13,14 @@ import { login, logout } from './components/store/Slices/userSlice';
 
 import { userSelector } from '../src/components/store/Slices/userSlice'
 import ProfileScreen from './components/Screen/ProfileScreen/ProfileScreen';
+import LoadingHomescreen from './components/Screen/HomeScreen/LoadingHomescreen';
+import { setLoading } from './components/store/Slices/loadingSlice';
 function App() {
   const app = initializeApp(firebaseConfig);
+  const isLoading = useSelector((state) => {
+    return state.loadingSlice.isLoading;
+  })
+
   // const [user,setUser]=useState(null)
 
   const auth = getAuth();
@@ -32,9 +38,13 @@ function App() {
           email: email,
           uid: uid
         }))
+        dispatch(setLoading(false))
+
       }
       else {
         dispatch(logout());
+        dispatch(setLoading(false))
+        
 
       }
 
@@ -46,12 +56,15 @@ function App() {
   return (
     <div className="app">
       {
-        (!user) ? <LoginScreen /> :
+        (!isLoading) ? ((!user) ? <LoginScreen /> :
           <Routes>
+
             <Route path='/' element={<HomeScreen />} />
             <Route path='/profile' element={<ProfileScreen />} />
-            
-          </Routes>
+            <Route path='/profile' element={<ProfileScreen />} />
+
+          </Routes>) :
+          <LoadingHomescreen />
       }
       {/* <HomeScreen/> */}
 

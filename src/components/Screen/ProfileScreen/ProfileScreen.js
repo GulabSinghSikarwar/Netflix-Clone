@@ -11,7 +11,7 @@ import { getAuth } from 'firebase/auth'
 // redux imports 
 import { useSelector } from 'react-redux'
 import Plan from './Plans/Plan'
-
+import { useNavigate } from 'react-router-dom'
 // react-router imports 
 
 
@@ -21,6 +21,7 @@ function ProfileScreen() {
 
     const app = initializeApp(firebaseConfig)
     const auth = getAuth();
+    const navigate=useNavigate()
     const SignOut = () => {
         auth.signOut()
 
@@ -49,6 +50,8 @@ function ProfileScreen() {
                             </div>
 
                             <button className={styled.profileScreen_plans_btn} onClick={SignOut}> SignOut </button>
+                            <button className={styled.profileScreen_plans_btn} onClick={()=>navigate("/")}> Cancel </button>
+                            
 
                         </div>
 
